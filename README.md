@@ -1,4 +1,4 @@
-# TruthGuard Plugin
+# TruthGuard Project built with DKG Node
 
 Multi-modal deepfake detection and content verification platform for the Decentralized Knowledge Graph (DKG).
 
