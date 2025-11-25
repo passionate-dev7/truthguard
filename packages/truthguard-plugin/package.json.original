@@ -1,0 +1,40 @@
+{
+  "name": "@dkg/truthguard-plugin",
+  "version": "0.0.1",
+  "description": "Multi-modal deepfake detection and content verification platform for DKG",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "tsup src/*.ts --format cjs,esm --watch",
+    "build": "tsup src/*.ts --format cjs,esm",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint . --max-warnings 0",
+    "test": "mocha --loader ../../node_modules/tsx/dist/loader.mjs 'tests/**/*.spec.ts'",
+    "ml:install": "cd python && pip install -r requirements.txt",
+    "ml:test": "cd python && python -m pytest tests/"
+  },
+  "devDependencies": {
+    "@dkg/eslint-config": "*",
+    "@dkg/typescript-config": "*",
+    "@types/node": "^22.9.0",
+    "tsup": "^8.5.0"
+  },
+  "dependencies": {
+    "@dkg/plugin-dkg-essentials": "^0.0.3",
+    "@dkg/plugin-swagger": "^0.0.2",
+    "@dkg/plugins": "^0.0.2",
+    "drizzle-orm": "^0.36.4",
+    "mysql2": "^3.15.3",
+    "zod": "^3.24.1"
+  },
+  "keywords": [
+    "deepfake-detection",
+    "content-verification",
+    "multi-modal-ai",
+    "dkg",
+    "origintrail",
+    "fact-checking",
+    "media-authentication"
+  ]
+}

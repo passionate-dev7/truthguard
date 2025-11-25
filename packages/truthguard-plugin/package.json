@@ -1,0 +1,17 @@
+{
+  "name": "truthguard-production",
+  "version": "1.0.0",
+  "description": "TruthGuard Production Server",
+  "main": "production-server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node production-server.js"
+  },
+  "dependencies": {
+    "dkg.js": "^6.0.90",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "mysql2": "^3.15.3",
+    "uuid": "^9.0.1",
+    "ws": "^8.18.3"
+  }
+}
